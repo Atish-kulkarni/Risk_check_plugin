@@ -1,8 +1,8 @@
 
 *.pyc
 *.pyc
-C:/Users/Administrator/Documents/GitHub/Risk_check_plugin/project/__pycache__
-C:/Users/atish/OneDrive/Documents/GitHub/Risk_check_plugin/project/__pycache__/
+project/__pycache__/
+project/__pycache__/
 project/__pycache__/risk_check_class.cpython-38.pyc
 project/__pycache__/server.cpython-38.pyc
 project/__pycache__/risk_check_class.cpython-38.pyc
@@ -12,4 +12,4 @@ project/__pycache__/risk_check_class.cpython-38.pyc
 project/__pycache__/server.cpython-38.pyc
 project/__pycache__/main.cpython-38.pyc
 project/outgoing_database.pickle
-*.pickle
+*project/.pickle
