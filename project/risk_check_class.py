@@ -19,7 +19,7 @@ from fastapi import FastAPI, HTTPException
 cwd = os.getcwd()
 os.chdir(cwd)
 
-df = pd.read_csv('C:/Users/atish/OneDrive/Desktop/work/pattern finder/df dump/'+ 'df (True)' + '.csv', nrows=10000)
+df = pd.read_csv('df_base.csv')
 
 sub_df = df[df['Customer Email'] == 'Aziznono94@gmail.com']
 email = "'Aziznono94@gmail.com'"
