@@ -109,7 +109,7 @@ def trx_check(current_shopper: Shopper):
             "points": current_trasnaction.points,
             "points_total" : current_trasnaction.total_points(),
             "label" : current_shopper.label,
-            "NOF_total" : current_trasnaction.connect_dwh_get_fraud(),
+            #"NOF_total" : current_trasnaction.connect_dwh_get_fraud(),
             "member_whitelist" : current_trasnaction.member_whitelist(),
             "member_blacklist" : current_trasnaction.member_blacklist(),
             "test": current_trasnaction.test(),
