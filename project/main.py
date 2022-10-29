@@ -44,7 +44,7 @@ class Shopper(BaseModel):
     
 @app.get("/")
 async def root():
-    return FileResponse('image.jpg')
+    return FileResponse(cwd + '\image.jpg')
 
 @app.post('/shopper_check')
 def trx_check(current_shopper: Shopper):
