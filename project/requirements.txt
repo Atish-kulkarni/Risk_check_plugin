@@ -1,0 +1,8 @@
+fastapi
+mangum
+uvicorn
+pandas
+numpy
+datetime
+
+
