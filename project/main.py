@@ -113,7 +113,7 @@ def trx_check(current_shopper: Shopper):
             "member_whitelist" : current_trasnaction.member_whitelist(),
             "member_blacklist" : current_trasnaction.member_blacklist(),
             "test": current_trasnaction.test(),
-            "server_pushed": True
+            "server_pushed": 'From AWS'
             }
     with open('filename.pickle', 'wb') as handle:
         pickle.dump(response, handle)
