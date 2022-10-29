@@ -22,7 +22,7 @@ os.chdir(cwd)
 
 
 url = "http://127.0.0.1:8000/shopper_check"
-#url = "http://52.59.153.134:80/shopper_check"
+url = "http://52.59.153.134:80/shopper_check"
 for i in range(1):
     myobj = {
         "Shopper_email": "atish.k3@gmail.com",
