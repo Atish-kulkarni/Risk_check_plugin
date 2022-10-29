@@ -44,7 +44,7 @@ class Shopper(BaseModel):
     
 @app.get("/")
 async def root():
-    return cwd
+    return FileResponse('image.jpg')
 
 @app.post('/shopper_check')
 def trx_check(current_shopper: Shopper):
@@ -133,5 +133,5 @@ def trx_check(current_shopper: Shopper):
 
 
 if __name__ == "__main__":
-    uvicorn.run('server:app', host="127.0.0.1", port=8000, reload=True, log_level='info')
+    uvicorn.run('main:app', host="127.0.0.1", port=8000, reload=True, log_level='info')
     
