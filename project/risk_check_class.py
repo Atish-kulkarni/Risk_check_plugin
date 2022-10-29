@@ -122,7 +122,7 @@ class transaction():
         
             return len(df)
         except:
-            return 'failed'
+            return -1
     
         
     def test(self):
