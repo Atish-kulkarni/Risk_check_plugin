@@ -19,7 +19,8 @@ import numpy as np
 from risk_check_class import transaction
 from datetime import datetime
 from starlette.responses import FileResponse 
-os.chdir('C:/Users/atish/OneDrive/Documents/GitHub/Risk_check_plugin/project')
+cwd = os.getcwd()
+os.chdir(cwd)
 
 app = FastAPI()
 

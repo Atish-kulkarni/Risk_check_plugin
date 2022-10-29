@@ -16,7 +16,8 @@ from pydantic import BaseModel
 from fastapi.testclient import TestClient
 from fastapi import FastAPI, HTTPException
 
-os.chdir('C:/Users/atish/OneDrive/Documents/GitHub/Risk_check_plugin/project')
+cwd = os.getcwd()
+os.chdir(cwd)
 
 df = pd.read_csv('C:/Users/atish/OneDrive/Desktop/work/pattern finder/df dump/'+ 'df (True)' + '.csv', nrows=10000)
 

@@ -15,7 +15,8 @@ from pandas.io.json import json_normalize
 import os
 import time
 
-os.chdir('C:/Users/atish/OneDrive/Documents/GitHub/Risk_check_plugin/project')
+cwd = os.getcwd()
+os.chdir(cwd)
 
 
 
