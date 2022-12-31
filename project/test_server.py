@@ -16,13 +16,13 @@ import os
 import time
 
 cwd = os.getcwd()
-os.chdir(cwd)
+os.chdir('C:/Users/atish/OneDrive/Documents/GitHub/Risk_check_plugin/project')
 
 
 
 
 url = "http://127.0.0.1:8000/shopper_check"
-url = "http://52.59.153.134:80/shopper_check"
+url = "http://3.73.122.132:80/shopper_check"
 for i in range(1):
     myobj = {
         "Shopper_email": "atish.k3@gmail.com",
