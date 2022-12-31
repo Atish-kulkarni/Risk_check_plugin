@@ -27,7 +27,7 @@ email = "'Aziznono94@gmail.com'"
 shopper_name = 'Atish'
 dt = datetime.now()
 transactions_dict = df.to_dict('index')
-
+  
 
 app=FastAPI()
 
