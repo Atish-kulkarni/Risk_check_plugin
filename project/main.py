@@ -53,13 +53,13 @@ def trx_check(current_shopper: Shopper):
     """
 
     try: 
-        with open('outgoing_database.pickle', 'rb') as out_db:
+        with open('C:/API data/outgoing_database.pickle', 'rb') as out_db:
             outgoing_response = pickle.load(out_db)
     except:
         outgoing_response = []
         
     try:
-        with open('incoming_database.pickle', 'rb') as in_db:
+        with open('C:/API data/incoming_database.pickle', 'rb') as in_db:
             incoming_requests = pickle.load(in_db)
     except:
         incoming_requests = []
@@ -89,7 +89,7 @@ def trx_check(current_shopper: Shopper):
     json_compatible_item_data = jsonable_encoder(current_shopper)
     incoming_requests.append(json_compatible_item_data)
     
-    with open('incoming_database.pickle', 'wb') as in_db:
+    with open('C:/API data/incoming_database.pickle', 'wb') as in_db:
         pickle.dump(incoming_requests, in_db)
     
     
@@ -123,14 +123,12 @@ def trx_check(current_shopper: Shopper):
     This function creates outgoing requests database 
     """
     outgoing_response.append(response)
-    with open('outgoing_database.pickle', 'wb') as out_db:
+    with open('C:/API data/outgoing_database.pickle', 'wb') as out_db:
         pickle.dump(outgoing_response, out_db)
     try:
         return response
     except:
         return 'API failed'
-
-
 
 if __name__ == "__main__":
     uvicorn.run('main:app', host="127.0.0.1", port=8000, reload=True, log_level='trace', use_colors=True)
