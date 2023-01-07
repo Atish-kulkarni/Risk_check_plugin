@@ -42,11 +42,11 @@ class Shopper(BaseModel):
     label: Union[str, None] = None
     historic_check: Union[bool, None] = None
     
-@app.get("/")
+@app.get("/", status_code=200)
 async def root():
     return FileResponse('image.jpg')
 
-@app.post('/shopper_check')
+@app.post('/shopper_check', status_code=200)
 def trx_check(current_shopper: Shopper):
     """
     Loads previous databases in case of server failure 
