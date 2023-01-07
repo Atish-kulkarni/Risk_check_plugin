@@ -15,3 +15,4 @@ project/outgoing_database.pickle
 *project/.pickle
 *.pickle
 *.pyc
+*.pyc
