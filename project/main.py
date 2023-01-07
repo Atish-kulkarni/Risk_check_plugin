@@ -115,8 +115,6 @@ def trx_check(current_shopper: Shopper):
             "server_pushed": 'From AWS'
             }
     
-        
-        
     """
     This function creates outgoing requests database 
     """
