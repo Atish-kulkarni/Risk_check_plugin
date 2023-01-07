@@ -114,8 +114,7 @@ def trx_check(current_shopper: Shopper):
             "test": current_trasnaction.test(),
             "server_pushed": 'From AWS'
             }
-    with open('filename.pickle', 'wb') as handle:
-        pickle.dump(response, handle)
+    
         
         
     """
