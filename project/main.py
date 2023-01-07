@@ -41,6 +41,7 @@ class Shopper(BaseModel):
     trx_value: Union[float, None] = None
     label: Union[str, None] = None
     historic_check: Union[bool, None] = None
+    Source: Union[str, None] = None
     
 @app.get("/", status_code=200)
 async def root():
@@ -78,7 +79,8 @@ def trx_check(current_shopper: Shopper):
         df=df,
         outgoing_response = outgoing_response,
         label=current_shopper.label,
-        historic_check = current_shopper.historic_check )
+        historic_check = current_shopper.historic_check,
+        source = current_shopper.Source)
     
    
     """
@@ -112,7 +114,8 @@ def trx_check(current_shopper: Shopper):
             "member_whitelist" : current_trasnaction.member_whitelist(),
             "member_blacklist" : current_trasnaction.member_blacklist(),
             "test": current_trasnaction.test(),
-            "server_pushed": 'From AWS'
+            "server_pushed": 'From AWS',
+            "source": current_shopper.Source
             }
     
     """

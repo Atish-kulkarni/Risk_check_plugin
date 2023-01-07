@@ -34,7 +34,7 @@ app=FastAPI()
 class transaction():
 
     def __init__(self, shopper_email, shopper_name, transactions_dict, dt, df, outgoing_response, label,
-                 historic_check ):
+                 historic_check,source ):
         self.shopper_email = shopper_email
         self.shopper_name = shopper_name
         self.transactions_dict = transactions_dict
@@ -46,6 +46,7 @@ class transaction():
         self.historic_fraud_check = historic_check
         self.df_whitelist = pd.read_csv('whitelist.txt', encoding= 'unicode_escape', sep='\t')
         self.df_blacklist = pd.read_csv('blacklist.txt', encoding= 'unicode_escape', sep='\t')
+        self.source = source
     def shopper_name_email_comparison(self ):
         score = SequenceMatcher(None, self.shopper_name.lower(),self.shopper_email.split('@')[0]).ratio()
         self.points["shopper_name_email_comparison"] = 10
