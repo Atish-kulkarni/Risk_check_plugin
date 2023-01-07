@@ -51,7 +51,6 @@ def trx_check(current_shopper: Shopper):
     """
     Loads previous databases in case of server failure 
     """
-
     try: 
         with open('C:/API data/outgoing_database.pickle', 'rb') as out_db:
             outgoing_response = pickle.load(out_db)
