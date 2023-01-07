@@ -16,3 +16,4 @@ project/outgoing_database.pickle
 *.pickle
 *.pyc
 *.pyc
+project/__pycache__/main.cpython-38.pyc
