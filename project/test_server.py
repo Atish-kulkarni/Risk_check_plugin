@@ -29,7 +29,8 @@ for i in range(1):
         "Shopper_name" : "mike",
         "trx_value": "4",
         "label": "GMP",
-        "historic_check": False}
+        "historic_check": False,
+        "Source": "Laptop/python/spyder"}
     
     start_time = time.time()
     response = requests.post(url, json=myobj)
