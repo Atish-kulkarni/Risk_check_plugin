@@ -125,9 +125,9 @@ def trx_check(current_shopper: Shopper):
     with open('C:/API data/outgoing_database.pickle', 'wb') as out_db:
         pickle.dump(outgoing_response, out_db)
     try:
-        return response
+        return response, 200
     except:
-        return 'API failed'
+        return 404
 
 if __name__ == "__main__":
     uvicorn.run('main:app', host="127.0.0.1", port=8000, reload=True, log_level='trace', use_colors=True)
