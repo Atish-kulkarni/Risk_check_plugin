@@ -20,7 +20,7 @@ from fastapi import FastAPI, HTTPException
 cwd = os.getcwd()
 os.chdir(cwd)
 
-df = pd.read_csv('C:/Users/atish/OneDrive/Documents/GitHub/Risk_check_plugin/project/transaction data/csv_files/df_base.csv')
+df = pd.read_csv('df_base.csv')
 
 dt = datetime.now()
 transactions_dict = df.to_dict('index')
