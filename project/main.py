@@ -29,9 +29,6 @@ df = pd.DataFrame()
 
 transactions_dict = df.to_dict('index')
 
-df_whitelist = pd.read_csv('whitelist.txt', encoding= 'unicode_escape', sep='\t')
-
-
 
 
 
