@@ -127,7 +127,7 @@ def trx_check(current_shopper: Shopper):
     try:
         return response, 200
     except:
-        return 406
+        return 400
 
 if __name__ == "__main__":
     uvicorn.run('main:app', host="127.0.0.1", port=8000, reload=True, log_level='trace', use_colors=True)
