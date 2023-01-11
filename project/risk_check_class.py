@@ -137,7 +137,7 @@ class transaction():
     
         
     def test(self):
-        return 'git ignore test'
+        return 'git ignore test complete'
     
     def member_whitelist(self):
          return self.shopper_email in self.df_whitelist['Customer Email'].values
